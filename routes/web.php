@@ -23,7 +23,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-// Route::get('drinks', 'PublicController@index')->name('public-drinks.index');
+Route::get('drinks', 'PublicController@index')->name('public-drinks.index');
 
 Route::prefix('admin')
 ->namespace('Admin')
